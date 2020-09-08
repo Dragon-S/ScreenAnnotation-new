@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  ScreenAnnotation
+
+  Created by longlong.shi on 2020/4/21.
+  Copyright © 2020 longlong.shi. All rights reserved.
+*/
+
+"Mouse" = "Mouse";
+"Select" = "Select";
+"Pen" = "Pen";
+"Shape" = "Shape";
+"Text" = "Text";
+"Format" = "Format";
+"Eraser" = "Eraser";
+"Undo" = "Undo";
+"Redo" = "Redo";
+"Clear" = "Clear";
+"Save" = "Save";
+"Show Toolbar" = "Show Toolbar";
+"Hide Toolbar" = "Hide Toolbar";
+"Quit" = "Quit";
