@@ -20,7 +20,7 @@
                                 defer:flag];
     if (self) {
         self.level = NSStatusWindowLevel;
-        self.backgroundColor = [NSColor colorWithWhite:1.0 alpha:0.001];//不让鼠标穿透
+        self.backgroundColor = [NSColor colorWithWhite:1.0 alpha:0.05];//不让鼠标穿透
     }
     
     return self;

@@ -236,7 +236,7 @@ static void saveImage(NSImage *image) {
     drawingViewController.drawingColor = _currentColor;
     drawingViewController.drawingFont = _currentFont;
     
-    [[self.view window] setBackgroundColor:[NSColor colorWithWhite:1.0 alpha:0.001]];
+    [[self.view window] setBackgroundColor:[NSColor colorWithWhite:1.0 alpha:0.05]];
 }
 
 - (void)clearSelectedBtnState {
@@ -259,7 +259,7 @@ static void saveImage(NSImage *image) {
     SAButton *button = sender;
     NSInteger btnTag = [button tag];
     NSColor *windowBackgroundColorIgnoresMouseEvent = [NSColor clearColor];//给window设置透明背景色后，鼠标穿透
-    NSColor *windowBackgroundColorAcceptMouseEvent = [NSColor colorWithWhite:1.0 alpha:0.001];//给window设置非透明背景色后，鼠标接受时间
+    NSColor *windowBackgroundColorAcceptMouseEvent = [NSColor colorWithWhite:1.0 alpha:0.05];//给window设置非透明背景色后，鼠标接受时间
     DrawingViewController *drawingViewController = (DrawingViewController *)[[[self view] window] contentViewController];
     [drawingViewController setTextFieldEditable:NO];//禁用文字编辑
     [drawingViewController clearSelectStatus];//清楚选中状态
@@ -339,7 +339,7 @@ static void saveImage(NSImage *image) {
 - (IBAction)toggleToolbar:(id)sender {
     if ([self view].hidden) {
         [[self view] setHidden:NO];
-        self.view.window.backgroundColor = [NSColor colorWithWhite:1.0 alpha:0.001];
+        self.view.window.backgroundColor = [NSColor colorWithWhite:1.0 alpha:0.05];
         _toggleMenuItem.title = NSLocalizedString(@"Hide Toolbar", nil);
     } else {
         [[self view] setHidden:YES];

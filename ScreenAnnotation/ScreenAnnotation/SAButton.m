@@ -37,6 +37,7 @@
     NSRange range = NSMakeRange(0, length);
     [attributedAlternateTitle addAttribute:NSForegroundColorAttributeName value:[NSColor colorWithRed:0.0 green:188.0 / 255.0 blue:229.0 / 255 alpha:1.0] range:range];
     [attributedAlternateTitle fixAttributesInRange:range];
+    [attributedAlternateTitle setAlignment:NSTextAlignmentCenter range:range];
     self.attributedAlternateTitle = attributedAlternateTitle;
     
     _defaultAttributedTitle = self.attributedTitle;
