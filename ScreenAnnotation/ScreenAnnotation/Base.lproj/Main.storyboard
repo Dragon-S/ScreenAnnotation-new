@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -734,7 +734,7 @@
             <objects>
                 <viewController storyboardIdentifier="ToolbarViewController" id="Fmy-8L-ENi" customClass="ToolbarViewController" sceneMemberID="viewController">
                     <customView key="view" id="vh2-ay-37b" customClass="ToolbarView">
-                        <rect key="frame" x="0.0" y="0.0" width="720" height="55"/>
+                        <rect key="frame" x="0.0" y="0.0" width="770" height="55"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sVt-5E-Yu5">
@@ -772,8 +772,20 @@
                                     <action selector="buttonAction:" target="Fmy-8L-ENi" id="Ttc-3b-ZEq"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddo-oV-goM" customClass="SAButton">
+                                <rect key="frame" x="135" y="2" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" title="Spotlight" bezelStyle="shadowlessSquare" image="toolbar-spotlight" imagePosition="above" alignment="center" alternateImage="toolbar-spotlight-select" inset="2" id="BEu-0e-wjQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="contentTintColor" red="0.67843137249999996" green="0.68627450980000004" blue="0.69803921570000005" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="buttonAction:" target="Fmy-8L-ENi" id="cQA-vS-WHT"/>
+                                </connections>
+                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rw4-Qu-jSx" customClass="SAButton">
-                                <rect key="frame" x="136" y="2" width="50" height="50"/>
+                                <rect key="frame" x="193" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="画笔" bezelStyle="shadowlessSquare" image="toolbar-note" imagePosition="above" alignment="center" alternateImage="toolbar-note-select" imageScaling="proportionallyDown" inset="2" id="DGU-QU-EmN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -785,7 +797,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZ5-RS-Klm" customClass="SAButton">
-                                <rect key="frame" x="194" y="2" width="50" height="50"/>
+                                <rect key="frame" x="251" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="文字" bezelStyle="shadowlessSquare" image="toolbar-text" imagePosition="above" alignment="center" alternateImage="toolbar-text-select" imageScaling="proportionallyDown" inset="2" id="Kyk-yu-k3X">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -797,7 +809,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34C-Ir-tvU" customClass="SAButton">
-                                <rect key="frame" x="252" y="2" width="50" height="50"/>
+                                <rect key="frame" x="309" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="形状" bezelStyle="shadowlessSquare" image="toolbar-form" imagePosition="above" alignment="center" alternateImage="toolbar-form-select" imageScaling="proportionallyDown" inset="2" id="WUI-hG-ae5">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -809,7 +821,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CI8-Zm-VHC" customClass="SAButton">
-                                <rect key="frame" x="310" y="2" width="50" height="50"/>
+                                <rect key="frame" x="367" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="格式" bezelStyle="shadowlessSquare" image="toolbar-format" imagePosition="above" alignment="center" alternateImage="toolbar-format-select" imageScaling="proportionallyDown" inset="2" id="nDB-P9-ShY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -821,7 +833,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ins-wT-O3j" customClass="SAButton">
-                                <rect key="frame" x="393" y="2" width="50" height="50"/>
+                                <rect key="frame" x="450" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="橡皮擦" bezelStyle="shadowlessSquare" image="toolbar-eraser" imagePosition="above" alignment="center" alternateImage="toolbar-eraser-select" imageScaling="proportionallyDown" inset="2" id="LCC-Nv-6CJ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -833,7 +845,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raH-9T-2Jm" customClass="SAButton">
-                                <rect key="frame" x="451" y="2" width="50" height="50"/>
+                                <rect key="frame" x="508" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="撤销" bezelStyle="shadowlessSquare" image="toolbar-undo" imagePosition="above" alignment="center" alternateImage="toolbar-undo-select" imageScaling="proportionallyDown" inset="2" id="MWE-4x-fna">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -845,7 +857,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jZ3-dh-n7Q" customClass="SAButton">
-                                <rect key="frame" x="509" y="2" width="50" height="50"/>
+                                <rect key="frame" x="566" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="重做" bezelStyle="shadowlessSquare" image="toolbar-redo" imagePosition="above" alignment="center" alternateImage="toolbar-redo-select" imageScaling="proportionallyDown" inset="2" id="FFJ-WX-EVC">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -857,7 +869,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sy-fH-4JQ" customClass="SAButton">
-                                <rect key="frame" x="567" y="2" width="50" height="50"/>
+                                <rect key="frame" x="624" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="清空" bezelStyle="shadowlessSquare" image="toolbar-delate" imagePosition="above" alignment="center" alternateImage="toolbar-delate-select" imageScaling="proportionallyDown" inset="2" id="Ajy-Yw-NR5">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -869,7 +881,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZv-bi-Xbi" customClass="SAButton">
-                                <rect key="frame" x="650" y="2" width="50" height="50"/>
+                                <rect key="frame" x="707" y="2" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="保存" bezelStyle="shadowlessSquare" image="toolbar-save" imagePosition="above" alignment="center" alternateImage="toolbar-save-select" imageScaling="proportionallyDown" inset="2" id="IR5-AH-mlw">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -881,11 +893,11 @@
                                 </connections>
                             </button>
                             <box horizontalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-lZ-X08" customClass="SASeparateLine">
-                                <rect key="frame" x="374" y="7" width="5" height="40"/>
+                                <rect key="frame" x="431" y="7" width="5" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </box>
                             <box horizontalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="mWX-OO-EM8" customClass="SASeparateLine">
-                                <rect key="frame" x="631" y="7" width="5" height="40"/>
+                                <rect key="frame" x="688" y="7" width="5" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </box>
                         </subviews>
@@ -902,6 +914,7 @@
                         <outlet property="saveBtn" destination="aZv-bi-Xbi" id="v8q-EI-6SF"/>
                         <outlet property="selectBtn" destination="Dtu-0x-Cdz" id="4Av-4J-JNx"/>
                         <outlet property="shapeBtn" destination="34C-Ir-tvU" id="GvW-73-tYU"/>
+                        <outlet property="spotlightBtn" destination="ddo-oV-goM" id="32N-5e-EAy"/>
                         <outlet property="statusBarMenu" destination="mpg-6H-Yup" id="Re9-3H-hyn"/>
                         <outlet property="textBtn" destination="QZ5-RS-Klm" id="qNk-rr-eOK"/>
                         <outlet property="toggleMenuItem" destination="ciC-I0-pW1" id="kbt-aU-C6o"/>
@@ -1374,23 +1387,23 @@
         <image name="color-15-highlight" width="26" height="26"/>
         <image name="color-16" width="26" height="26"/>
         <image name="color-16-highlight" width="26" height="26"/>
-        <image name="color-black" width="20" height="20"/>
+        <image name="color-black" width="26" height="26"/>
         <image name="color-black-foucs" width="26" height="26"/>
-        <image name="color-blue" width="20" height="20"/>
+        <image name="color-blue" width="26" height="26"/>
         <image name="color-blue-foucs" width="26" height="26"/>
-        <image name="color-bluegreen" width="20" height="20"/>
+        <image name="color-bluegreen" width="26" height="26"/>
         <image name="color-bluegreen-foucs" width="26" height="26"/>
-        <image name="color-green" width="20" height="20"/>
+        <image name="color-green" width="26" height="26"/>
         <image name="color-green-foucs" width="26" height="26"/>
-        <image name="color-grey" width="20" height="20"/>
+        <image name="color-grey" width="26" height="26"/>
         <image name="color-grey-foucs" width="26" height="26"/>
-        <image name="color-orange" width="20" height="20"/>
+        <image name="color-orange" width="26" height="26"/>
         <image name="color-orange-foucs" width="26" height="26"/>
-        <image name="color-purple" width="20" height="20"/>
+        <image name="color-purple" width="26" height="26"/>
         <image name="color-purple-foucs" width="26" height="26"/>
         <image name="color-red" width="26" height="26"/>
         <image name="color-red-foucs" width="26" height="26"/>
-        <image name="color-rose" width="20" height="20"/>
+        <image name="color-rose" width="26" height="26"/>
         <image name="color-rose-foucs" width="26" height="26"/>
         <image name="shape-arrow" width="26" height="26"/>
         <image name="shape-arrow-highlight" width="26" height="26"/>
@@ -1428,6 +1441,8 @@
         <image name="toolbar-save-select" width="26" height="26"/>
         <image name="toolbar-select" width="26" height="26"/>
         <image name="toolbar-select-select" width="26" height="26"/>
+        <image name="toolbar-spotlight" width="26" height="26"/>
+        <image name="toolbar-spotlight-select" width="26" height="26"/>
         <image name="toolbar-text" width="26" height="26"/>
         <image name="toolbar-text-select" width="26" height="26"/>
         <image name="toolbar-undo" width="26" height="26"/>

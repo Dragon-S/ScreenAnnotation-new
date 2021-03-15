@@ -23,6 +23,10 @@ static NSCursor *getCursorWithToolType(ToolType toolType, DrawingType drawingTyp
             cursorImage = [NSImage imageNamed:@"mouse-move"];
             break;
         }
+        case ToolTypeSpotlight: {
+            cursorImage = [NSImage imageNamed:@"mouse-spotlight"];
+            break;
+        }
         case ToolTypePen: {
             cursorImage = [NSImage imageNamed:@"mouse-brush"];
             break;

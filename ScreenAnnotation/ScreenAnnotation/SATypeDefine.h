@@ -12,6 +12,7 @@
 typedef enum : NSUInteger {
     ToolTypeMouse = 0,
     ToolTypeSelect,
+    ToolTypeSpotlight,
     ToolTypePen,
     ToolTypeText,
     ToolTypeShape,

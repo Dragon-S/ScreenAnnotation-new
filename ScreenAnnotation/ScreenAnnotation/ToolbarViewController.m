@@ -70,6 +70,7 @@ static void saveImage(NSImage *image) {
 
 @property (nonatomic, weak) IBOutlet SAButton *mouseBtn;
 @property (nonatomic, weak) IBOutlet SAButton *selectBtn;
+@property (nonatomic, weak) IBOutlet SAButton *spotlightBtn;
 @property (nonatomic, weak) IBOutlet SAButton *penBtn;
 @property (nonatomic, weak) IBOutlet SAButton *textBtn;
 @property (nonatomic, weak) IBOutlet SAButton *shapeBtn;
@@ -137,6 +138,9 @@ static void saveImage(NSImage *image) {
     [_selectBtn setTag:ToolTypeSelect];
     [_selectBtn setTitle:NSLocalizedString(@"Select", nil)];
     [_selectBtn setCanSelected:YES];
+    [_spotlightBtn setTag:ToolTypeSpotlight];
+    [_spotlightBtn setTitle:NSLocalizedString(@"Spotlight", nil)];
+    [_spotlightBtn setCanSelected:YES];
     [_penBtn setTag:ToolTypePen];
     [_penBtn setTitle:NSLocalizedString(@"Pen", nil)];
     [_penBtn setCanSelected:YES];
@@ -242,6 +246,7 @@ static void saveImage(NSImage *image) {
 - (void)clearSelectedBtnState {
     [_mouseBtn setSelected:NO];
     [_selectBtn setSelected:NO];
+    [_spotlightBtn setSelected:NO];
     [_penBtn setSelected:NO];
     [_textBtn setSelected:NO];
     [_shapeBtn setSelected:NO];
@@ -271,6 +276,12 @@ static void saveImage(NSImage *image) {
             break;
         }
         case ToolTypeSelect: {
+            [self clearSelectedBtnState];
+            [drawingViewController setToolType:btnTag];
+            [[self.view window] setBackgroundColor:windowBackgroundColorAcceptMouseEvent];
+            break;
+        }
+        case ToolTypeSpotlight: {
             [self clearSelectedBtnState];
             [drawingViewController setToolType:btnTag];
             [[self.view window] setBackgroundColor:windowBackgroundColorAcceptMouseEvent];
