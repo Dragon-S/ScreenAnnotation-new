@@ -440,7 +440,7 @@
 				CODE_SIGN_ENTITLEMENTS = ScreenAnnotation/ScreenAnnotation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = S6ZG48242E;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ScreenAnnotation/Info.plist;
@@ -460,7 +460,7 @@
 				CODE_SIGN_ENTITLEMENTS = ScreenAnnotation/ScreenAnnotation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = S6ZG48242E;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ScreenAnnotation/Info.plist;
